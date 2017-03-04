@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -46,7 +47,96 @@ table {
   border-spacing: 0; }
 
 body {
+  font-size: 10px;
   width: 100vw;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-family: 'Pontano Sans', sans-serif;
+  color: #556370;
+  overflow-x: hidden; }
+
+a,
+a:visited,
+a:active {
+  color: #4ecdc4; }
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 4rem);
+  max-width: 960px; }
+
+.intro,
+.contacts {
+  font-size: 1.4rem; }
+
+.button {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: 2px solid;
+  background: #fff;
+  text-decoration: none; }
+
+.contacts {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 2em;
+  text-align: right; }
+  .contacts:after {
+    position: fixed;
+    content: '';
+    display: block;
+    width: 100%;
+    background: #c54d57;
+    opacity: 0.1;
+    height: 10rem;
+    transform: skewX(60deg) skewY(10deg) scaleY(4) translateX(20vw);
+    z-index: -1; }
+
+.accent {
+  font-family: 'Cantata One', serif;
+  color: #4ecdc4; }
+
+.intro {
+  margin-top: 10vh; }
+  .intro .name {
+    margin: 1rem 0;
+    font-size: 3rem; }
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/*!
+ * EDITED by carrot-e to preserve only required styles
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-github:before {
+  content: ""; }
+
+.fa-linkedin:before {
+  content: ""; }
+
+.fa-codepen:before {
+  content: ""; }
 
 /*# sourceMappingURL=main.css.map */
